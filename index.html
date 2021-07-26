@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="" />
+    <link
+      rel="icon shortcut"
+      href="https://image.flaticon.com/icons/png/512/2917/2917114.png"
+    />
+    <title>Loucos por Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <p id="entrada">Você também é do time Loucos por Café?</p>
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>Queremos saber mais sobre você</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+          </fieldset>
+          <fieldset>
+            <legend>Que tipo de café você gosta?</legend>
+            <select name="tipos" id="tipos">
+              <option value="">Selecione uma opção</option>
+              <option value="espresso">Espresso</option>
+              <option value="capuccino">Capuccino</option>
+              <option value="latte">Latte</option>
+              <option value="macchiato">Macchiato</option>
+              <option value="mocha">Mocha</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Qual estilo</legend>
+            <input
+              type="radio"
+              name="estilo"
+              id="estilo"
+              value="estilo"
+              checked
+            />
+            <label for="estilo">Cafés quentes</label>
+            <input type="radio" name="estilo" id="ebook" value="ebook" />
+            <label for="ebook">Cafés frios</label>
+          </fieldset>
+          <fieldset>
+            <legend>Memórias tem cores e cheiros</legend>
+            <label for="mensagem">Conte-nos uma lembrança boa com café</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </fieldset>
+          <button type="submit">Enviar</button>
+          <button type="reset">Cancelar</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

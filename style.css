@@ -1,0 +1,149 @@
+body {
+  font-family: 'Neucha', cursive;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu5mxKOzY.woff2)
+    format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  background-image: url('https://reviewcafe.com.br/wp-content/uploads/2020/10/cafe-colombiano.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  text-align: center;
+}
+@keyframes capa {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    transform: scale(1.3);
+    opacity: 100%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+#capa {
+  width: 250px;
+  animation: capa 3s;
+}
+
+#entrada {
+  font-size: x-large;
+  color: beige;
+  font-weight: 400;
+  background-color: rgb(65, 15, 15);
+}
+.container {
+  padding-left: 50%;
+}
+
+legend {
+  font-size: xx-large;
+  color: beige;
+  background-color: rgb(65, 15, 15);
+}
+
+legend:hover {
+  font-size: xx-large;
+  color: black;
+  background-color: rgba(128, 128, 128, 0.849);
+}
+
+label {
+  color: beige;
+  background-color: rgb(65, 15, 15);
+  font-size: larger;
+  display: block;
+}
+
+label:hover {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.849);
+  font-size: larger;
+  display: block;
+}
+
+input[type='email'],
+input[type='text'] {
+  padding: 1%;
+  margin-bottom: 10px;
+  width: 83.3%;
+}
+
+textarea:focus {
+  background: gray;
+  transition: all 0.9s ease-in-out;
+  color: purple;
+}
+
+input:focus {
+  background: gray;
+  transition: all 0.9s ease-in-out;
+  color: purple;
+}
+
+input:disabled {
+  background: rgb(65, 15, 15);
+}
+
+textarea {
+  margin-bottom: 10px;
+  width: 85%;
+}
+
+fieldset:nth-child(1) label {
+  display: block;
+  background-color: rgb(65, 15, 15);
+}
+
+fieldset:last-of-type {
+  margin-bottom: 15px;
+}
+
+@keyframes firula {
+  0% {
+    background-color: beige;
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    background-color: bisque;
+    left: 50px;
+    top: 0px;
+  }
+  100% {
+    background-color: beige;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation-name: firula;
+  animation-duration: 3s;
+}
+
+button {
+  border-radius: 10%;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(165, 142, 142);
+  font-size: medium;
+}
+
+button:hover {
+  border-radius: 30%;
+  transition: all 0.1s ease-in;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(165, 142, 142);
+  font-size: large;
+  font-weight: bolder;
+}
